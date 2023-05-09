@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "routemodel"
+version = "0.0.1"
+description = "A library for exposing Pydantic Models as a service for prototyping APIs"
+authors = ["Ryan Brady <ryan@ryanbrady.org>"]
+license = "ASL 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+pydantic = "^1.10.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+ipython = "^8.13.2"
+black = "^23.3.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
